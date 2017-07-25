@@ -1,0 +1,43 @@
+[{
+  "userid":"1",
+  "username":"kishan",
+  "password":"123",
+  "name":"Kishan Bhutiya",
+  "email":"kishan@gmail.com",
+  "phone":"7028570160",
+  "location":"MA",
+  "inbox":[
+  ],
+  "sentmail":[
+
+  ]
+},
+  {
+    "userid":"2",
+    "username":"amar",
+    "password":"amar",
+    "name":"Amar Kumar",
+    "email":"amar@gmail.com",
+    "phone":"2132321231",
+    "location":"NJ",
+    "inbox":[
+    ],
+    "sentmail":[
+
+    ]
+  },
+  {
+    "userid":"3",
+    "username":"akshay",
+    "password":"akshay",
+    "name":"akshay Kumar",
+    "email":"akshay@gmail.com",
+    "phone":"3421236687",
+    "location":"NY",
+    "inbox":[
+
+    ],
+    "sentmail":[
+    ]
+  }
+]

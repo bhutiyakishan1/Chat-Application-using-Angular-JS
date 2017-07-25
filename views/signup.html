@@ -1,0 +1,49 @@
+<div id="formStyle">
+    <h2>Register</h2>
+    <form class="form-group">
+        <div class="inputContainer" >
+            <label for="userid"><span>User id</span></label>
+            <input type="text" name="userid" class="form-control" ng-model="userid" id="userid" required />
+            <span ng-show="form.userid.$dirty && form.userid.$error.required" class="help-block">Userid is required</span>
+        </div>
+        <div class="inputContainer" >
+            <label for="username"><span>Username</span></label>
+            <input type="text" name="username" class="form-control" id="username" ng-model="username" required />
+            <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">User name is required</span>
+        </div>
+        <div class="inputContainer" >
+            <label for="password"><span>Password</span></label>
+            <input type="password" name="password" class="form-control" id="password" ng-model="password" required />
+            <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password name is required</span>
+        </div>
+        <div class="inputContainer">
+            <label for="name"><span>name</span></label>
+            <input type="text" name="name" class="form-control" ng-model="name" id="name" required />
+            <span ng-show="form.name.$dirty && form.name.$error.required" class="help-block">Password is required</span>
+        </div>
+        <div class="inputContainer" >
+            <label for="email"><span>Email</span></label>
+            <input type="text" name="email" class="form-control" ng-model="email" id="email"required />
+            <span ng-show="form.email.$dirty && form.email.$error.required" class="help-block">Email is required</span>
+        </div>
+        <div class="inputContainer" >
+            <label for="location"><span>Phone</span></label>
+            <input type="text" name="location" class="form-control" ng-model="phone" id="location" required />
+            <span ng-show="form.location.$dirty && form.location.$error.required" class="help-block">Location is required</span>
+        </div>
+        <div class="inputContainer" >
+            <label for="phone"><span>Location</span></label>
+            <input type="text" name="phone" class="form-control" ng-model="location" id="phone"required />
+            <span ng-show="form.phone.$dirty && form.phone.$error.required" class="help-block">Phone is required</span>
+        </div>
+
+        <div class="inputContainer" style="color:red">{{alert}}</div>
+
+        <div class="inputContainer">
+            <label for="submitBtn"><span></span></label>
+            <input type="button" value="Register" ng-disabled="form.$invalid" id="submitBtn" class="btn btn-primary" ng-click="tryRegister()"></br><br>
+            <label for="cancelBtn"><span></span></label>
+            <input type="button" id="cancelBtn" value="Cancel" onclick="window.location='#/login'">
+        </div>
+    </form>
+</div>
